@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<SqlWorkbenchSqlProject xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="DDL">
+  <Items>
+    <LogicalFolder Name="Connections" Type="2" Sorted="true">
+      <Items>
+        <ConnectionNode Name="SERGEY\MSSQLSERVER17:SERGEY\Admin">
+          <Created>2025-08-29T21:32:01.3852525+10:00</Created>
+          <Type>SQL</Type>
+          <Server>SERGEY\MSSQLSERVER17</Server>
+          <UserName />
+          <Authentication>Windows Authentication</Authentication>
+          <InitialDB>PD_411_SQL</InitialDB>
+          <LoginTimeout>30</LoginTimeout>
+          <TrustServerCertificate>True</TrustServerCertificate>
+          <HostNameInServerCertificate />
+          <EncryptionOption>True</EncryptionOption>
+          <ExecutionTimeout>0</ExecutionTimeout>
+          <ConnectionProtocol>NotSpecified</ConnectionProtocol>
+          <ApplicationName>Microsoft SQL Server Management Studio - Query</ApplicationName>
+        </ConnectionNode>
+      </Items>
+    </LogicalFolder>
+    <LogicalFolder Name="Queries" Type="0" Sorted="true">
+      <Items>
+        <FileNode Name="SQLQuery0-CREATE DATABASE.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:SERGEY\MSSQLSERVER17:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>SERGEY\MSSQLSERVER17</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>SQLQuery0-CREATE DATABASE.sql</FullPath>
+        </FileNode>
+        <FileNode Name="SQLQuery0-DROP DATABASE.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:SERGEY\MSSQLSERVER17:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>SERGEY\MSSQLSERVER17</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>SQLQuery0-DROP DATABASE.sql</FullPath>
+        </FileNode>
+        <FileNode Name="SQLQuery1-CREATE TABLES STUDENTS BRANCH.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:SERGEY\MSSQLSERVER17:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>SERGEY\MSSQLSERVER17</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>SQLQuery1-CREATE TABLES STUDENTS BRANCH.sql</FullPath>
+        </FileNode>
+        <FileNode Name="SQLQuery1-DROP TABLE.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:SERGEY\MSSQLSERVER17:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>SERGEY\MSSQLSERVER17</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>SQLQuery1-DROP TABLE.sql</FullPath>
+        </FileNode>
+        <FileNode Name="SQLQuery2-CREATE TABLE TEACHERS.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:SERGEY\MSSQLSERVER17:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>SERGEY\MSSQLSERVER17</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>SQLQuery2-CREATE TABLE TEACHERS.sql</FullPath>
+        </FileNode>
+        <FileNode Name="SQLQuery3-CREATE TABLES  Disciplines.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:SERGEY\MSSQLSERVER17:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>SERGEY\MSSQLSERVER17</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>SQLQuery3-CREATE TABLES  Disciplines.sql</FullPath>
+        </FileNode>
+      </Items>
+    </LogicalFolder>
+    <LogicalFolder Name="Miscellaneous" Type="3" Sorted="true">
+      <Items />
+    </LogicalFolder>
+  </Items>
+</SqlWorkbenchSqlProject>
