@@ -58,6 +58,30 @@
           <AssociatedConnUserName />
           <FullPath>SQLQuery3-CREATE TABLES  Disciplines.sql</FullPath>
         </FileNode>
+        <FileNode Name="SQLQuery4-CREATE TABLE SCHEDULE.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:SERGEY\MSSQLSERVER17:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>SERGEY\MSSQLSERVER17</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>SQLQuery4-CREATE TABLE SCHEDULE.sql</FullPath>
+        </FileNode>
+        <FileNode Name="SQLQuery5-CREATE TABLES GRADES.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:SERGEY\MSSQLSERVER17:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>SERGEY\MSSQLSERVER17</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>SQLQuery5-CREATE TABLES GRADES.sql</FullPath>
+        </FileNode>
+        <FileNode Name="SQLQuery-CREATE DATABASE AND ALL TABLES.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:SERGEY\MSSQLSERVER17:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>SERGEY\MSSQLSERVER17</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>SQLQuery-CREATE DATABASE AND ALL TABLES.sql</FullPath>
+        </FileNode>
+        <FileNode Name="SQLQuery-DROP DATABASE AND ALL TABLES.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:SERGEY\MSSQLSERVER17:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>SERGEY\MSSQLSERVER17</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>SQLQuery-DROP DATABASE AND ALL TABLES.sql</FullPath>
+        </FileNode>
       </Items>
     </LogicalFolder>
     <LogicalFolder Name="Miscellaneous" Type="3" Sorted="true">
