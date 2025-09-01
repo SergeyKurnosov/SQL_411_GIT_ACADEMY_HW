@@ -1,23 +1,24 @@
-CREATE DATABASE PD_411_SQL
+
+CREATE DATABASE PD_411_ALL_IN_ONE_2
 ON		    
 (
-   NAME			=	PD_411_SQL,
-   FILENAME		=	'D:\Microsoft SQL Server\MSSQL14.MSSQLSERVER17\MSSQL\Data\PD_411_SQL.mdf',
+   NAME			=	PD_411_ALL_IN_ONE_2,
+   FILENAME		=	'D:\Microsoft SQL Server\MSSQL14.MSSQLSERVER17\MSSQL\Data\PD_411_ALL_IN_ONE_2.mdf',
    SIZE			=	8MB,
    MAXSIZE		=	500MB,
    FILEGROWTH	=	5MB
 )
 LOG ON
 (
-   NAME			=	PD_411_SQL_Log,
-   FILENAME		=	'D:\Microsoft SQL Server\MSSQL14.MSSQLSERVER17\MSSQL\Data\PD_411_SQL_log.ldf', 
+   NAME			=	PD_411_ALL_IN_ONE_2_LOG,
+   FILENAME		=	'D:\Microsoft SQL Server\MSSQL14.MSSQLSERVER17\MSSQL\Data\PD_411_ALL_IN_ONE_2_log.ldf', 
    SIZE			=	8MB,
    MAXSIZE		=	500MB,
    FILEGROWTH	=	8MB
 );
 GO  
 -------------------------------------------------------------------
-USE PD_411_SQL
+USE PD_411_ALL_IN_ONE_2
 GO
 
 CREATE TABLE Directions
@@ -100,24 +101,28 @@ CREATE TABLE RequiredDisciplines
 -------------------------------------------------------------------
 CREATE TABLE Schedule
 (
-	lesson_id		INT		PRIMARY KEY,
-	date			DATE	NOT NULL,
-	time			TIME	NOT NULL,
-	[group]			INT		NOT NULL,
-	discipline		INT		NOT NULL,
-	teacher			INT		NOT NULL,
-	CONSTRAINT FK_Schedule_Groups			FOREIGN KEY ([group])		REFERENCES Groups(group_id),
-	CONSTRAINT FK_Schedule_Disciplines		FOREIGN KEY (discipline)	REFERENCES Disciplines(discipline_id),
-	CONSTRAINT FK_Schedule_Teachers			FOREIGN KEY (teacher)		REFERENCES Teachers(teacher_id)
+	lesson_id		BIGINT	PRIMARY KEY,
+	[date]			DATE			NOT NULL,
+	[time]			TIME			NOT NULL,
+	[group]			INT				NOT NULL
+    CONSTRAINT FK_Schedule_Groups		FOREIGN KEY REFERENCES Groups(group_id),
+	discipline		INT				NOT NULL
+    CONSTRAINT FK_Schedule_Disciplines	FOREIGN KEY REFERENCES Disciplines(discipline_id),
+	teacher			INT				NOT NULL
+	CONSTRAINT FK_Schedule_Teachers		FOREIGN KEY REFERENCES Teachers(teacher_id),
+	[status]		BIT				NOT NULL,
+	[subject]		NVARCHAR(256)
 );
 -------------------------------------------------------------------
 CREATE TABLE Grades
 (
 	student		INT,
-	lesson		INT,
-	grade_1		INT,
-	grade_2		INT,
-	PRIMARY KEY (student , lesson),
+	lesson		BIGINT,
+    PRIMARY KEY (student , lesson),
 	CONSTRAINT FK_Grades_Students		FOREIGN KEY(student)	REFERENCES Students(student_id),
-	CONSTRAINT FK_Grades_Schedule		FOREIGN KEY(lesson)		REFERENCES Schedule(lesson_id)
+	CONSTRAINT FK_Grades_Schedule		FOREIGN KEY(lesson)		REFERENCES Schedule(lesson_id),
+	grade_1		TINYINT
+	CONSTRAINT	CK_Grade_1	CHECK	(grade_1 > 0 AND grade_1 <= 12),
+	grade_2		TINYINT
+	CONSTRAINT	CK_Grade_2	CHECK	(grade_2 > 0 AND grade_2 <= 12)
 );

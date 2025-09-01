@@ -16,7 +16,7 @@ CREATE TABLE Groups
 
 CREATE TABLE Students
 (
-	student_id		INT				PRIMARY KEY,
+	student_id		INT				PRIMARY KEY IDENTITY(1,1),
 	last_name		NVARCHAR(150)	NOT NULL,
 	first_name		NVARCHAR(150)	NOT NULL,
 	middle_name		NVARCHAR(150),
