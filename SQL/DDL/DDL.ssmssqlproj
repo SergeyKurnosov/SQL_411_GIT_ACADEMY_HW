@@ -58,6 +58,12 @@
           <AssociatedConnUserName />
           <FullPath>SQLQuery3-CREATE TABLES  Disciplines.sql</FullPath>
         </FileNode>
+        <FileNode Name="SQLQuery4-ALTER Students.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:SERGEY\MSSQLSERVER17:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>SERGEY\MSSQLSERVER17</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>SQLQuery4-ALTER Students.sql</FullPath>
+        </FileNode>
         <FileNode Name="SQLQuery4-CREATE TABLE SCHEDULE.sql">
           <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:SERGEY\MSSQLSERVER17:True</AssociatedConnectionMoniker>
           <AssociatedConnSrvName>SERGEY\MSSQLSERVER17</AssociatedConnSrvName>
