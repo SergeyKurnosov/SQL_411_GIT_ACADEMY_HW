@@ -9,7 +9,7 @@ DECLARE     @start_time			AS		TIME	=	'13:30'
 DECLARE		@discipline			AS		SMALLINT=	(SELECT	discipline_id		FROM Disciplines	WHERE discipline_name LIKE N'%MS SQL Server')
 DECLARE		@lessons_count		AS		TINYINT	=	(SELECT	number_of_lessons	FROM Disciplines	WHERE discipline_name LIKE N'%MS SQL Server%');
 DECLARE		@group				AS		INT		=	(SELECT group_id			FROM Groups			WHERE group_name=N'PD_411');
-DECLARE		@teacher			AS		INT		=	(SELECT teacher_id			FROM Teachers		WHERE first_name=N'Ξλεγ');
+DECLARE		@teacher			AS		INT		=	(SELECT teacher_id			FROM Teachers		WHERE first_name=N'Π®Ρ‹Ρ…Ρƒ');
 DECLARE		@lesson_number		AS		INT		=	1;
 
 WHILE(@lesson_number <= @lessons_count)

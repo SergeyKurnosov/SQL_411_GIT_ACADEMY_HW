@@ -9,13 +9,13 @@ DECLARE     @start_time			AS		TIME	=	'13:30'
 DECLARE		@discipline			AS		SMALLINT=	(SELECT	discipline_id		FROM Disciplines	WHERE discipline_name LIKE N'%MS SQL Server')
 DECLARE		@lessons_count		AS		TINYINT	=	(SELECT	number_of_lessons	FROM Disciplines	WHERE discipline_name LIKE N'%MS SQL Server%');
 DECLARE		@group				AS		INT		=	(SELECT group_id			FROM Groups			WHERE group_name=N'PD_411');
-DECLARE		@teacher			AS		INT		=	(SELECT teacher_id			FROM Teachers		WHERE first_name=N'Олег');
+DECLARE		@teacher			AS		INT		=	(SELECT teacher_id			FROM Teachers		WHERE first_name=N'РћР»РµРі');
 DECLARE		@lesson_number		AS		INT		=	1;
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
-SET @discipline = (SELECT	discipline_id		FROM Disciplines	WHERE discipline_name LIKE N'%Основы Информационных технологий%');
+SET @discipline = (SELECT	discipline_id		FROM Disciplines	WHERE discipline_name LIKE N'%РћСЃРЅРѕРІС‹ РРЅС„РѕСЂРјР°С†РёРѕРЅРЅС‹С… С‚РµС…РЅРѕР»РѕРіРёР№%');
 SET @date		= '2024-08-27'
-SET @lessons_count =  (SELECT	number_of_lessons		FROM Disciplines	WHERE discipline_name LIKE N'%Основы Информационных технологий%');
+SET @lessons_count =  (SELECT	number_of_lessons		FROM Disciplines	WHERE discipline_name LIKE N'%РћСЃРЅРѕРІС‹ РРЅС„РѕСЂРјР°С†РёРѕРЅРЅС‹С… С‚РµС…РЅРѕР»РѕРіРёР№%');
 
 WHILE(@lesson_number <= @lessons_count)
 BEGIN
@@ -40,9 +40,9 @@ END
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 SET @lesson_number = 1
-SET @discipline = (SELECT	discipline_id		FROM Disciplines	WHERE discipline_name LIKE N'%Администрирование Windows');
+SET @discipline = (SELECT	discipline_id		FROM Disciplines	WHERE discipline_name LIKE N'%РђРґРјРёРЅРёСЃС‚СЂРёСЂРѕРІР°РЅРёРµ Windows');
 SET @date		= '2024-10-22'
-SET @lessons_count =  (SELECT	number_of_lessons		FROM Disciplines	WHERE discipline_name LIKE N'%Администрирование Windows');
+SET @lessons_count =  (SELECT	number_of_lessons		FROM Disciplines	WHERE discipline_name LIKE N'%РђРґРјРёРЅРёСЃС‚СЂРёСЂРѕРІР°РЅРёРµ Windows');
 
 WHILE(@lesson_number <= @lessons_count)
 BEGIN
@@ -73,9 +73,9 @@ END
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 SET @lesson_number = 1
-SET @discipline = (SELECT	discipline_id		FROM Disciplines	WHERE discipline_name LIKE N'%Процедурное программирование на языке C++');
+SET @discipline = (SELECT	discipline_id		FROM Disciplines	WHERE discipline_name LIKE N'%РџСЂРѕС†РµРґСѓСЂРЅРѕРµ РїСЂРѕРіСЂР°РјРјРёСЂРѕРІР°РЅРёРµ РЅР° СЏР·С‹РєРµ C++');
 SET @date		= '2024-08-31'
-SET @lessons_count =  (SELECT	number_of_lessons		FROM Disciplines	WHERE discipline_name LIKE N'%Процедурное программирование на языке C++');
+SET @lessons_count =  (SELECT	number_of_lessons		FROM Disciplines	WHERE discipline_name LIKE N'%РџСЂРѕС†РµРґСѓСЂРЅРѕРµ РїСЂРѕРіСЂР°РјРјРёСЂРѕРІР°РЅРёРµ РЅР° СЏР·С‹РєРµ C++');
 
 WHILE(@lesson_number <= @lessons_count)
 BEGIN
