@@ -70,6 +70,12 @@
           <AssociatedConnUserName />
           <FullPath>SQLQuery4-CREATE TABLE SCHEDULE.sql</FullPath>
         </FileNode>
+        <FileNode Name="SQLQuery5-ALTER Groups.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>SQLQuery5-ALTER Groups.sql</FullPath>
+        </FileNode>
         <FileNode Name="SQLQuery5-CREATE TABLES GRADES.sql">
           <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:SERGEY\MSSQLSERVER17:True</AssociatedConnectionMoniker>
           <AssociatedConnSrvName>SERGEY\MSSQLSERVER17</AssociatedConnSrvName>
