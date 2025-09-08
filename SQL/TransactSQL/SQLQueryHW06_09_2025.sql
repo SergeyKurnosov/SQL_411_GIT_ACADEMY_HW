@@ -49,13 +49,13 @@ AS
 BEGIN
 DECLARE @dayName VARCHAR(32);
 SET @dayName = CASE 
-                    WHEN @num = 1 THEN '享_'
-                    WHEN @num = 2 THEN '买_'
-                    WHEN @num = 3 THEN '佯_'
-                    WHEN @num = 4 THEN '昨_'
-                    WHEN @num = 5 THEN '向_'
-                    WHEN @num = 6 THEN '厌_'
-                    WHEN @num = 7 THEN '埋'
+                    WHEN @num = 1 THEN '袩薪_'
+                    WHEN @num = 2 THEN '袙褌_'
+                    WHEN @num = 3 THEN '小褉_'
+                    WHEN @num = 4 THEN '效褌_'
+                    WHEN @num = 5 THEN '袩褌_'
+                    WHEN @num = 6 THEN '小斜_'
+                    WHEN @num = 7 THEN '袙褋'
                     ELSE 'error'
                     END;
 
