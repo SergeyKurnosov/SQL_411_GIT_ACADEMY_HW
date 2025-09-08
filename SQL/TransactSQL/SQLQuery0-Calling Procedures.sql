@@ -5,24 +5,14 @@ GO
 
 
 --DELETE FROM Schedule
-EXEC sp_AddSchedule N'PD_411', N'%MS SQL Server%', N'Ковтун', '2025-08-18', '13:30';
+--EXEC sp_AddSchedule N'PD_411', N'%MS SQL Server%', N'Ковтун', '2025-08-18', '13:30';
+EXEC sp_AddSchedule N'PD_411', N'%ADO.NET%', N'Ковтун';
+EXEC sp_AddSchedule N'PD_411', N'Системное программирование%', N'Ковтун';
+EXEC sp_AddSchedule N'PD_411', N'%Сетевое программирование%', N'Ковтун', '2025-08-18', '13:30';
+EXEC sp_AddSchedule N'PD_411', N'HTML/CSS', N'Ковтун', '2025-08-18', '13:30';
+EXEC sp_AddSchedule N'PD_411', N'%JavaScript%', N'Ковтун', '2025-08-18', '13:30';
 EXEC sp_SelectSchedule;
 PRINT(dbo.GetNextLearningDay(N'PD_411', NULL));
 PRINT(N'----------------------------------')
-PRINT(dbo.IsLearningDay(N'PD_411', '2025-09-08'));
+PRINT(dbo.IsLearningDay(N'PD_411', '2025-09-12'));
 PRINT(dbo.GetNextLearningDay(N'PD_411', '2025-09-05'));
-
-
-PRINT(dbo.IsLearningDay(N'PV_211', '2025-09-15'));
-
-SELECT dbo.DecimalToBinary(21) AS BinaryValue;
-
-
-SELECT * FROM Groups
-SELECT
-	group_id,
-	group_name,
-	direction_name,
-	dbo.DecimalToBinary(learning_days) AS days_learning
-FROM Groups , Directions
-WHERE direction = direction_id;
