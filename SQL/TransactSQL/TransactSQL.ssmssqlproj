@@ -82,6 +82,12 @@
           <AssociatedConnUserName />
           <FullPath>SQLQueryHW_#3.sql</FullPath>
         </FileNode>
+        <FileNode Name="SQLQueryHW06_09_2025.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:SERGEY\MSSQLSERVER17:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>SERGEY\MSSQLSERVER17</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>SQLQueryHW06_09_2025.sql</FullPath>
+        </FileNode>
       </Items>
     </LogicalFolder>
     <LogicalFolder Name="Miscellaneous" Type="3" Sorted="true">
