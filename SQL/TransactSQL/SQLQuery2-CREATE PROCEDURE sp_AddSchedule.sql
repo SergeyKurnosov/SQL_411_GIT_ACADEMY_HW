@@ -1,4 +1,3 @@
-
 SET DATEFIRST	1;
 USE PD_321
 GO
@@ -47,7 +46,6 @@ BEGIN
 			BEGIN
 				PRINT(FORMATMESSAGE(N'%s %s у группы %s уже занято', CAST(@date AS NCHAR(10)) , CAST(@start_time AS NCHAR(8) ), @group_name));
 			END
-			SET @lesson_number	= @lesson_number+2;
 			SET @date			= dbo.GetNextLearningDay(@group_name, DEFAULT);
 			--SET @date			= DATEADD(DAY, IIF(DATEPART(WEEKDAY, @date) = 5, 3, 2), @date);
 	END
