@@ -1,6 +1,7 @@
 USE PD_321
 GO
 SET DATEFIRST 1;
+GO
 
 ALTER PROCEDURE sp_SetNewYearHolidays  @year AS INT,  @holiday_name   NVARCHAR(150)
 AS

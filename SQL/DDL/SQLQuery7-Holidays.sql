@@ -20,7 +20,7 @@ CREATE TABLE Holidays
 CREATE TABLE DaysOFF
 (
 	dayoff_id		SMALLINT		PRIMARY KEY IDENTITY(1,1),
-	[date]			DATE			NOT NULL,
+	[date]			DATE			NOT NULL UNIQUE,
 	holiday			TINYINT			NOT NULL
 	CONSTRAINT FK_DaysOFF_to_Holidays	FOREIGN KEY REFERENCES Holidays(holiday_id)
 );
